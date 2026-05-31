@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang='fr'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Calendrier - DU IA Finance & Actuariat - CARMA</title>
+<style>
+:root{--pine:#0f5e5b;--leaf:#2f8f6d;--gold:#c49331;--coral:#b94a3f;--plum:#635b82;--sky:#35799f;--ink:#17212b;--muted:#66727d;--paper:#f6f8f6;--line:#dce4df;--ue0:#248a66;--ue1:#635b82;--ue2:#2f8f6d;--ue3:#b94a3f;--ue4:#35799f;--ue5:#7a5b93;--rendu:#c49331;--ferie:#b94a3f;--vacances:#35799f}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:138px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Segoe UI,Roboto,Arial,sans-serif;line-height:1.45}a{color:inherit;text-decoration:none}.wrap{width:min(1380px,calc(100% - 32px));margin:auto}.top{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}.topin{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:12px;font-weight:900}.mark{width:48px;height:48px;display:grid;place-items:center;background:linear-gradient(135deg,var(--pine),var(--leaf));color:#fff}.sub{display:block;color:var(--muted);font-size:.82rem;font-weight:500}.hero{background:linear-gradient(120deg,rgba(15,94,91,.08),rgba(196,147,49,.12)),#fff;border-bottom:1px solid var(--line);padding:44px 0}.eyebrow{display:inline-block;color:var(--pine);background:rgba(47,143,109,.12);border:1px solid rgba(47,143,109,.22);padding:6px 10px;font-size:.8rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}h1,h2{font-family:Georgia,Times New Roman,serif;margin:0}h1{font-size:clamp(2rem,5vw,3.2rem);margin-top:14px}.hero p{max-width:760px;color:#4c5863}.info{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:24px}.info div{background:#fff;border:1px solid var(--line);padding:14px}.info b{display:block;color:var(--pine);font-size:.82rem;text-transform:uppercase;letter-spacing:.06em}.nav{position:sticky;top:74px;z-index:20;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);padding:12px 0}.navin,.filters,.legend{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}.pill,.filter{border:1px solid var(--line);background:#fff;color:#46535e;padding:9px 12px;font-weight:800;cursor:pointer}.pill:hover,.filter.active{background:var(--pine);border-color:var(--pine);color:#fff}main{padding:28px 0 70px}.tools{display:grid;grid-template-columns:1fr auto;gap:14px;margin-bottom:18px}input{width:100%;border:1px solid var(--line);padding:13px 14px;font:inherit}.legend{justify-content:flex-start;background:#fff;border:1px solid var(--line);padding:12px;margin:18px 0 26px}.sw{width:14px;height:14px;display:inline-block;border-radius:3px;margin-right:6px}.month{margin:38px 0}.month h2{text-align:center;font-size:1.85rem;margin-bottom:16px}.month h2 span{font-family:Segoe UI,Roboto,Arial,sans-serif;color:var(--pine);background:rgba(47,143,109,.12);border:1px solid rgba(47,143,109,.22);font-size:.82rem;padding:5px 9px}.tablewrap{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:8px}table{width:100%;min-width:980px;border-collapse:collapse;table-layout:fixed}th{background:var(--pine);color:#fff;padding:13px 8px;text-transform:uppercase;font-size:.75rem;letter-spacing:.06em}td{height:142px;vertical-align:top;border:1px solid var(--line);padding:9px;background:#fff}.empty{background:#f0f4f1}.num{display:inline-flex;min-width:28px;height:28px;align-items:center;justify-content:center;background:var(--paper);border:1px solid var(--line);font-weight:900;margin-bottom:7px}.event{border-left:4px solid var(--pine);background:#f9fbfa;border-radius:6px;padding:7px;margin-bottom:7px;font-size:.75rem;cursor:pointer}.event b{display:block}.badge{display:inline-block;color:#fff;background:var(--pine);border-radius:999px;padding:2px 6px;font-size:.65rem;font-weight:900}.meta{display:block;color:var(--muted);font-size:.7rem;font-weight:700}.python,.sql{border-color:var(--ue0)}.ml,.dl,.nlp{border-color:var(--ue1)}.trading,.fraude,.sentiment,.credit{border-color:var(--ue2)}.tarif,.reserv,.anomalie,.sante{border-color:var(--ue3)}.spark,.cloud{border-color:var(--ue4)}.rgpd{border-color:var(--ue5)}.rendu{border-color:var(--rendu);background:#fff5d7}.ferie{border-color:var(--ferie);background:#fdeceb}.vacances{border-color:var(--vacances);background:#eaf5fb}.ue0{background:var(--ue0)}.ue1{background:var(--ue1)}.ue2{background:var(--ue2)}.ue3{background:var(--ue3)}.ue4{background:var(--ue4)}.ue5{background:var(--ue5)}.brendu{background:var(--rendu)}.bferie{background:var(--ferie)}.bvacances{background:var(--vacances)}.panel{position:fixed;inset:0;background:rgba(23,33,43,.45);z-index:60;display:none}.panel.open{display:block}.box{width:min(620px,100%);margin-left:auto;height:100%;background:#fff;padding:24px;overflow:auto}button.close{float:right;width:38px;height:38px;border:1px solid var(--line);background:#fff;color:var(--pine);font-weight:900}footer{background:#fff;border-top:1px solid var(--line);padding:30px 0;color:var(--muted)}@media(max-width:900px){.tools,.info{grid-template-columns:1fr}.topin{align-items:flex-start;flex-direction:column;padding:12px 0}.nav{top:112px}}
+</style>
+</head>
+<body>
+<header class='top'><div class='wrap topin'><a class='brand' href='#top'><span class='mark'>C</span><span>CARMA<span class='sub'>Centre Africain de Recherche en Risk Management et Assurances</span></span></a><a href='index.html'>Syllabus</a></div></header>
+<section class='hero' id='top'><div class='wrap'><span class='eyebrow'>Promotion 2026-2027</span><h1>Calendrier DU IA Finance & Actuariat</h1><p>Planning complet d'octobre 2026 à juin 2027 : cours du soir, rendus, soutenances, jours fériés et vacances.</p><div class='info'><div><b>Horaires</b>18h30-21h</div><div><b>Format</b>Distanciel via Zoom</div><div><b>Replays</b>Disponibles 1 an</div><div><b>Contact</b>contact@carma-afrique.org</div></div></div></section>
+<nav class='nav'><div class='wrap navin' id='monthnav'></div></nav>
+<main class='wrap'><section class='tools'><input id='q' type='search' placeholder='Rechercher un cours, une UE, un professeur ou un rendu'><div class='filters'><button class='filter active' data-f='all'>Tout</button><button class='filter' data-f='UE0'>UE0</button><button class='filter' data-f='UE1'>UE1</button><button class='filter' data-f='UE2'>UE2</button><button class='filter' data-f='UE3'>UE3</button><button class='filter' data-f='UE4'>UE4</button><button class='filter' data-f='UE5'>UE5</button><button class='filter' data-f='rendu'>Rendus</button><button class='filter' data-f='special'>Fériés</button></div></section><div class='legend'><span><i class='sw' style='background:var(--ue0)'></i>UE0</span><span><i class='sw' style='background:var(--ue1)'></i>UE1</span><span><i class='sw' style='background:var(--ue2)'></i>UE2</span><span><i class='sw' style='background:var(--ue3)'></i>UE3</span><span><i class='sw' style='background:var(--ue4)'></i>UE4</span><span><i class='sw' style='background:var(--ue5)'></i>UE5</span><span><i class='sw' style='background:var(--rendu)'></i>Rendu</span><span><i class='sw' style='background:var(--ferie)'></i>Férié</span></div><p id='count' class='meta'></p><div id='root'></div></main>
+<div class='panel' id='panel'><div class='box'><button class='close' id='close'>×</button><h2 id='ptitle'></h2><div id='plist'></div></div></div>
+<footer><div class='wrap'><b>CARMA</b><br>DU IA : Finance & Actuariat - Promotion 2026-2027</div></footer>
+<script>
+const months=[['octobre',2026,10,'Octobre 2026','UE0 - Fondamentaux'],['novembre',2026,11,'Novembre 2026','UE0 → UE1'],['decembre',2026,12,'Décembre 2026','UE1 - Deep Learning & NLP'],['janvier',2027,1,'Janvier 2027','UE2 - IA Finance'],['fevrier',2027,2,'Février 2027','UE2 → UE3'],['mars',2027,3,'Mars 2027','UE3 → UE4 - Big Data'],['avril',2027,4,'Avril 2027','UE5 → UE6 - Projet'],['mai',2027,5,'Mai 2027','UE6 - Projet Final'],['juin',2027,6,'Juin 2027','Soutenances']];
+const source=`
+2026-10-01|suivi|KICKOFF|Rentrée & Présentation|D. Krasniqi|17h-18h
+2026-10-05|python|UE0|Python pour la Data Science|Prof. Python|18h30-21h
+2026-10-06|python|UE0|Python pour la Data Science|Prof. Python|18h30-21h
+2026-10-07|sql|UE0|SQL|Prof. SQL|18h30-21h
+2026-10-08|rgpd|UE5|IA Act Européen & Réglementations Sectorielles|Prof. Juridique|18h30-21h
+2026-10-12|python|UE0|Python pour la Data Science|Prof. Python|18h30-21h
+2026-10-13|python|UE0|Python pour la Data Science|Prof. Python|18h30-21h
+2026-10-14|sql|UE0|SQL|Prof. SQL|18h30-21h
+2026-10-15|rgpd|UE5|IA Act Européen & Réglementations Sectorielles|Prof. Juridique|18h30-21h
+2026-10-16|rgpd|UE5|IA Act Européen & Réglementations Sectorielles|Prof. Juridique|18h30-21h
+2026-10-19|python|UE0|Python pour la Data Science|Prof. Python|18h30-21h
+2026-10-20|python|UE0|Python pour la Data Science|Prof. Python|18h30-21h
+2026-10-21|sql|UE0|SQL|Prof. SQL|18h30-21h
+2026-10-22|python|UE0|Python pour la Data Science|Prof. Python|18h30-21h
+2026-10-26|python|UE0|Python pour la Data Science|Prof. Python|18h30-21h
+2026-10-27|python|UE0|Python pour la Data Science|Prof. Python|18h30-21h
+2026-10-28|sql|UE0|SQL|Prof. SQL|18h30-21h
+2026-10-29|python|UE0|Python pour la Data Science - Projet|Prof. Python|18h30-21h
+2026-11-02|ml|UE1|Machine Learning|Prof. ML|18h30-21h
+2026-11-03|ml|UE1|Machine Learning|Prof. ML|18h30-21h
+2026-11-04|rgpd|UE5|RGPD|Prof. Juridique|18h30-21h
+2026-11-05|ml|UE1|Machine Learning|Prof. ML|18h30-21h
+2026-11-08|rendu||Rendu Projet Python||
+2026-11-09|ml|UE1|Machine Learning|Prof. ML|18h30-21h
+2026-11-10|ml|UE1|Machine Learning|Prof. ML|18h30-21h
+2026-11-12|ml|UE1|Machine Learning|Prof. ML|18h30-21h
+2026-11-13|python|UE0|Python pour la Data Science|Prof. Python|18h30-21h
+2026-11-16|ml|UE1|Machine Learning|Prof. ML|18h30-21h
+2026-11-17|ml|UE1|Machine Learning|Prof. ML|18h30-21h
+2026-11-18|ml|UE1|Machine Learning|Prof. ML|18h30-21h
+2026-11-19|rgpd|UE5|RGPD|Prof. Juridique|18h30-21h
+2026-11-20|rgpd|UE5|RGPD - Principes|Prof. Juridique|18h30-21h
+2026-11-23|ml|UE1|Machine Learning|Prof. ML|18h30-21h
+2026-11-24|ml|UE1|Machine Learning|Prof. ML|18h30-21h
+2026-11-25|ml|UE1|Machine Learning - Projet|Prof. ML|18h30-21h
+2026-11-26|python|UE0|Python pour la Data Science|Prof. Python|18h30-21h
+2026-11-27|python|UE0|Python pour la Data Science|Prof. Python|18h30-21h
+2026-11-29|rendu||Rendu Projet SQL||
+2026-11-30|dl|UE1|Deep Learning|Prof. DL|18h30-21h
+2026-12-01|dl|UE1|Deep Learning|Prof. DL|18h30-21h
+2026-12-02|dl|UE1|Deep Learning|Prof. DL|18h30-21h
+2026-12-03|spark|UE4|Big Data - Spark|Prof. Big Data|18h30-21h
+2026-12-04|spark|UE4|Big Data - Spark|Prof. Big Data|18h30-21h
+2026-12-07|dl|UE1|Deep Learning|Prof. DL|18h30-21h
+2026-12-08|dl|UE1|Deep Learning|Prof. DL|18h30-21h
+2026-12-09|dl|UE1|Deep Learning|Prof. DL|18h30-21h
+2026-12-10|spark|UE4|Big Data - Spark|Prof. Big Data|18h30-21h
+2026-12-11|spark|UE4|Big Data - Spark|Prof. Big Data|18h30-21h
+2026-12-14|nlp|UE1|NLP — Traitement du Langage Naturel - LLM|Prof. NLP|18h30-21h
+2026-12-15|nlp|UE1|NLP — Traitement du Langage Naturel - LLM|Prof. NLP|18h30-21h
+2026-12-16|nlp|UE1|NLP — Traitement du Langage Naturel - LLM|Prof. NLP|18h30-21h
+2026-12-17|ml|UE1|Suivie Projet - Machine Learning|Prof. ML|18h30-21h
+2026-12-18|spark|UE4|Big Data - Spark|Prof. Big Data|18h30-21h
+2026-12-20|rendu||Rendu Projet ML||
+2026-12-21|nlp|UE1|NLP — Traitement du Langage Naturel - LLM|Prof. NLP|18h30-21h
+2026-12-22|nlp|UE1|NLP — Traitement du Langage Naturel - LLM|Prof. NLP|18h30-21h
+2026-12-23|nlp|UE1|NLP — Traitement du Langage Naturel - LLM|Prof. NLP|18h30-21h
+2027-01-04|nlp|UE1|NLP — Traitement du Langage Naturel - LLM|Prof. NLP|18h30-21h
+2027-01-05|nlp|UE1|NLP — Traitement du Langage Naturel - LLM|Prof. NLP|18h30-21h
+2027-01-06|spark|UE4|Big Data - Spark|Prof. Big Data|18h30-21h
+2027-01-07|ml|UE1|Soutenance Projet - Machine Learning|Prof. ML|18h30-21h
+2027-01-08|ml|UE1|Soutenance Projet - Machine Learning|Prof. ML|18h30-21h
+2027-01-10|rendu||Rendu DL & NLP||
+2027-01-11|spark|UE4|Big Data - Spark|Prof. Big Data|18h30-21h
+2027-01-12|spark|UE4|Big Data - Spark|Prof. Big Data|18h30-21h
+2027-01-13|spark|UE4|Big Data - Spark|Prof. Big Data|18h30-21h
+2027-01-14|dl|UE1|Suivie Projet - Deep Learning|Prof. DL|18h30-21h
+2027-01-15|cloud|UE4|Cloud - MLOps - CI/CD|Prof. Cloud|18h30-21h
+2027-01-18|cloud|UE4|Cloud - MLOps - CI/CD|Prof. Cloud|18h30-21h
+2027-01-19|cloud|UE4|Cloud - MLOps - CI/CD|Prof. Cloud|18h30-21h
+2027-01-20|cloud|UE4|Cloud - MLOps - CI/CD|Prof. Cloud|18h30-21h
+2027-01-21|dl|UE1|Soutenance Projet - Deep Learning|Prof. DL|18h30-21h
+2027-01-22|dl|UE1|Soutenance Projet - Deep Learning|Prof. DL|18h30-21h
+2027-01-25|cloud|UE4|Cloud - MLOps - CI/CD|Prof. Cloud|18h30-21h
+2027-01-26|cloud|UE4|Cloud - MLOps - CI/CD|Prof. Cloud|18h30-21h
+2027-01-27|cloud|UE4|Cloud - MLOps - CI/CD|Prof. Cloud|18h30-21h
+2027-02-01|sentiment|UE2|Analyse de Sentiments de Marché (Web scrapping + API)|Prof. NLP Finance|18h30-21h
+2027-02-02|sentiment|UE2|Analyse de Sentiments de Marché (Web scrapping + API)|Prof. NLP Finance|18h30-21h
+2027-02-03|sentiment|UE2|Analyse de Sentiments de Marché (Web scrapping + API)|Prof. NLP Finance|18h30-21h
+2027-02-04|nlp|UE1|Soutenance Projet - NLP — Traitement du Langage Naturel - LLM|Prof. NLP|18h30-21h
+2027-02-05|nlp|UE1|Soutenance Projet - NLP — Traitement du Langage Naturel - LLM|Prof. NLP|18h30-21h
+2027-02-07|rendu||Rendu Trading Algo||
+2027-02-08|sentiment|UE2|Analyse de Sentiments de Marché (Web scrapping + API)|Prof. NLP Finance|18h30-21h
+2027-02-09|sentiment|UE2|Analyse de Sentiments de Marché (Web scrapping + API)|Prof. NLP Finance|18h30-21h
+2027-02-10|sentiment|UE2|Analyse de Sentiments de Marché (Web scrapping + API)|Prof. NLP Finance|18h30-21h
+2027-02-11|spark|UE4|Big Data - Spark|Prof. Big Data|18h30-21h
+2027-02-15|credit|UE2|Scoring de Crédit & Risque Marché|Prof. Risque|18h30-21h
+2027-02-16|credit|UE2|Scoring de Crédit & Risque Marché|Prof. Risque|18h30-21h
+2027-02-17|credit|UE2|Scoring de Crédit & Risque Marché|Prof. Risque|18h30-21h
+2027-02-18|spark|UE4|Big Data - Spark|Prof. Big Data|18h30-21h
+2027-02-19|spark|UE4|Big Data - Spark|Prof. Big Data|18h30-21h
+2027-02-21|rendu||Rendu Credit Scoring||
+2027-02-22|credit|UE2|Scoring de Crédit & Risque Marché|Prof. Risque|18h30-21h
+2027-02-23|credit|UE2|Scoring de Crédit & Risque Marché|Prof. Risque|18h30-21h
+2027-02-24|credit|UE2|Scoring de Crédit & Risque Marché|Prof. Risque|18h30-21h
+2027-02-25|cloud|UE4|Cloud - MLOps - CI/CD - Projet|Prof. Cloud|18h30-21h
+2027-03-01|trading|UE2|Trading Algorithmique & Gestion de Portefeuille|Prof. Finance|18h30-21h
+2027-03-02|trading|UE2|Trading Algorithmique & Gestion de Portefeuille|Prof. Finance|18h30-21h
+2027-03-03|trading|UE2|Trading Algorithmique & Gestion de Portefeuille|Prof. Finance|18h30-21h
+2027-03-04|cloud|UE4|Cloud - MLOps - CI/CD - Projet|Prof. Cloud|18h30-21h
+2027-03-05|cloud|UE4|Cloud - MLOps - CI/CD - Projet|Prof. Cloud|18h30-21h
+2027-03-07|rendu||Rendu Tarification||
+2027-03-08|trading|UE2|Trading Algorithmique & Gestion de Portefeuille|Prof. Finance|18h30-21h
+2027-03-09|trading|UE2|Trading Algorithmique & Gestion de Portefeuille|Prof. Finance|18h30-21h
+2027-03-10|trading|UE2|Trading Algorithmique & Gestion de Portefeuille|Prof. Finance|18h30-21h
+2027-03-11|sentiment|UE2|Soutenance Projet - Analyse de Sentiments de Marché (Web scrapping + API)|Prof. NLP Finance|18h30-21h
+2027-03-15|fraude|UE2|Détection de Fraude & Blanchiment|Prof. Conformité|18h30-21h
+2027-03-16|fraude|UE2|Détection de Fraude & Blanchiment|Prof. Conformité|18h30-21h
+2027-03-17|fraude|UE2|Détection de Fraude & Blanchiment|Prof. Conformité|18h30-21h
+2027-03-18|sentiment|UE2|Soutenance Projet - Analyse de Sentiments de Marché (Web scrapping + API)|Prof. NLP Finance|18h30-21h
+2027-03-19|sentiment|UE2|Soutenance Projet - Analyse de Sentiments de Marché (Web scrapping + API)|Prof. NLP Finance|18h30-21h
+2027-03-22|fraude|UE2|Détection de Fraude & Blanchiment|Prof. Conformité|18h30-21h
+2027-03-23|fraude|UE2|Détection de Fraude & Blanchiment|Prof. Conformité|18h30-21h
+2027-03-24|fraude|UE2|Détection de Fraude & Blanchiment|Prof. Conformité|18h30-21h
+2027-03-25|credit|UE2|Scoring de Crédit & Risque Marché|Prof. Risque|18h30-21h
+2027-03-28|rendu||Rendu Actuariat||
+2027-03-29|tarif|UE3|Actuariat - Tarification|Prof. Actuariat|18h30-21h
+2027-03-30|tarif|UE3|Actuariat - Tarification|Prof. Actuariat|18h30-21h
+2027-03-31|tarif|UE3|Actuariat - Tarification|Prof. Actuariat|18h30-21h
+2027-04-01|credit|UE2|Scoring de Crédit & Risque Marché|Prof. Risque|18h30-21h
+2027-04-02|credit|UE2|Scoring de Crédit & Risque Marché|Prof. Risque|18h30-21h
+2027-04-05|tarif|UE3|Actuariat - Tarification|Prof. Actuariat|18h30-21h
+2027-04-06|tarif|UE3|Actuariat - Tarification|Prof. Actuariat|18h30-21h
+2027-04-07|tarif|UE3|Actuariat - Tarification|Prof. Actuariat|18h30-21h
+2027-04-08|trading|UE2|Trading Algorithmique & Gestion de Portefeuille|Prof. Finance|18h30-21h
+2027-04-11|rendu||Rendu Big Data||
+2027-04-12|reserv|UE3|Actuariat - Provisionnement|Prof. Réserves|18h30-21h
+2027-04-13|reserv|UE3|Actuariat - Provisionnement|Prof. Réserves|18h30-21h
+2027-04-14|reserv|UE3|Actuariat - Provisionnement|Prof. Réserves|18h30-21h
+2027-04-15|trading|UE2|Trading Algorithmique & Gestion de Portefeuille|Prof. Finance|18h30-21h
+2027-04-16|trading|UE2|Trading Algorithmique & Gestion de Portefeuille|Prof. Finance|18h30-21h
+2027-04-19|reserv|UE3|Actuariat - Provisionnement|Prof. Réserves|18h30-21h
+2027-04-20|reserv|UE3|Actuariat - Provisionnement|Prof. Réserves|18h30-21h
+2027-04-21|reserv|UE3|Actuariat - Provisionnement|Prof. Réserves|18h30-21h
+2027-04-22|fraude|UE2|Détection de Fraude & Blanchiment|Prof. Conformité|18h30-21h
+2027-04-26|anomalie|UE3|Détection d'Anomalies|Prof. Fraude|18h30-21h
+2027-04-27|anomalie|UE3|Détection d'Anomalies|Prof. Fraude|18h30-21h
+2027-04-28|anomalie|UE3|Détection d'Anomalies|Prof. Fraude|18h30-21h
+2027-04-29|fraude|UE2|Détection de Fraude & Blanchiment|Prof. Conformité|18h30-21h
+2027-04-30|fraude|UE2|Détection de Fraude & Blanchiment|Prof. Conformité|18h30-21h
+2027-05-02|rendu||Rendu Réglementation||
+2027-05-03|anomalie|UE3|Détection d'Anomalies|Prof. Fraude|18h30-21h
+2027-05-04|anomalie|UE3|Détection d'Anomalies|Prof. Fraude|18h30-21h
+2027-05-05|anomalie|UE3|Détection d'Anomalies|Prof. Fraude|18h30-21h
+2027-05-06|tarif|UE3|Actuariat - Tarification|Prof. Actuariat|18h30-21h
+2027-05-10|sante|UE3|Assurance Vie|Prof. Vie|18h30-21h
+2027-05-11|sante|UE3|Assurance Vie|Prof. Vie|18h30-21h
+2027-05-12|sante|UE3|Assurance Vie|Prof. Vie|18h30-21h
+2027-05-13|tarif|UE3|Actuariat - Tarification|Prof. Actuariat|18h30-21h
+2027-05-14|tarif|UE3|Actuariat - Tarification|Prof. Actuariat|18h30-21h
+2027-05-16|rendu||RENDU PROJET FINAL||
+2027-05-17|sante|UE3|Assurance Vie|Prof. Vie|18h30-21h
+2027-05-18|sante|UE3|Assurance Vie|Prof. Vie|18h30-21h
+2027-05-19|sante|UE3|Assurance Vie|Prof. Vie|18h30-21h
+2027-05-20|reserv|UE3|Actuariat - Provisionnement|Prof. Réserves|18h30-21h
+2027-05-27|reserv|UE3|Actuariat - Provisionnement|Prof. Réserves|18h30-21h
+2027-05-28|reserv|UE3|Actuariat - Provisionnement|Prof. Réserves|18h30-21h
+2027-05-31|anomalie|UE3|Détection d'Anomalies|Prof. Fraude|18h30-21h
+2027-06-07|anomalie|UE3|Détection d'Anomalies|Prof. Fraude|18h30-21h
+2027-06-08|anomalie|UE3|Détection d'Anomalies|Prof. Fraude|18h30-21h
+2027-06-14|sante|UE3|Assurance Vie|Prof. Vie|18h30-21h
+2027-06-21|sante|UE3|Assurance Vie|Prof. Vie|18h30-21h
+2027-06-22|sante|UE3|Assurance Vie|Prof. Vie|18h30-21h`;
+const special=`2026-11-01|ferie|Toussaint
+2026-11-11|ferie|Armistice
+2026-12-25|ferie|Noël
+2026-12-28|vacances|Vacances de Noël - 28 Déc au 3 Janvier
+2027-01-01|ferie|Jour de l'An
+2027-05-01|ferie|Férié
+2027-05-08|ferie|Férié
+2027-05-24|ferie|Pentecôte`;
+let filter='all';const items=source.trim().split('\n').map(l=>{let [date,type,badge,title,prof,time]=l.split('|');return{date,type,badge,title,prof,time,kind:'event'}});const specials=special.trim().split('\n').map(l=>{let[date,type,title]=l.split('|');return{date,type,badge:type,title,prof:'',time:'',kind:'special'}});function d(y,m,day){return new Date(y,m-1,day)}function iso(x){return `${x.getFullYear()}-${String(x.getMonth()+1).padStart(2,'0')}-${String(x.getDate()).padStart(2,'0')}`}for(let i=0;i<7;i++){let x=d(2026,12,28);x.setDate(x.getDate()+i);specials.push({date:iso(x),type:'vacances',badge:'vacances',title:'Vacances de Noël - 28 Déc au 3 Janvier',prof:'',time:'',kind:'special'})}const all=[...items,...specials].sort((a,b)=>a.date.localeCompare(b.date));const root=document.querySelector('#root'),q=document.querySelector('#q'),count=document.querySelector('#count'),nav=document.querySelector('#monthnav');nav.innerHTML=months.map(m=>`<a class='pill' href='#${m[0]}'>${m[3].split(' ')[0]}</a>`).join('');document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.f;render()});q.oninput=render;function match(x){let txt=[x.date,x.type,x.badge,x.title,x.prof,x.time].join(' ').toLowerCase();return(filter==='all'||x.badge===filter||x.type===filter||(filter==='special'&&x.kind==='special'))&&(!q.value||txt.includes(q.value.toLowerCase()))}function monthDays(y,m){let first=d(y,m,1),last=new Date(y,m,0),off=(first.getDay()+6)%7,a=Array(off).fill(null);for(let i=1;i<=last.getDate();i++)a.push({day:i,date:iso(d(y,m,i))});while(a.length%7)a.push(null);return a}function ev(x){let bc=x.badge?x.badge.toLowerCase():x.type;return `<div class='event ${x.type}' data-date='${x.date}'><span class='badge ${bc==='ue0'?'ue0':bc==='ue1'?'ue1':bc==='ue2'?'ue2':bc==='ue3'?'ue3':bc==='ue4'?'ue4':bc==='ue5'?'ue5':x.type==='rendu'?'brendu':x.type==='ferie'?'bferie':x.type==='vacances'?'bvacances':''}'>${x.badge||x.type}</span><b>${x.title}</b>${x.prof?`<span class='meta'>${x.prof}</span>`:''}${x.time?`<span class='meta'>${x.time}</span>`:''}</div>`}function render(){let shown=0,filtered=all.filter(match),map=new Map;filtered.forEach(x=>{if(!map.has(x.date))map.set(x.date,[]);map.get(x.date).push(x)});root.innerHTML=months.map(m=>{let days=monthDays(m[1],m[2]);if((filter!=='all'||q.value)&&!days.some(day=>day&&map.has(day.date)))return'';let rows=[];for(let i=0;i<days.length;i+=7)rows.push(days.slice(i,i+7));return `<section class='month' id='${m[0]}'><h2>${m[3]} <span>${m[4]}</span></h2><div class='tablewrap'><table><thead><tr>${['Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi','Dimanche'].map(x=>`<th>${x}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map(day=>{if(!day)return'<td class=empty></td>';let xs=map.get(day.date)||[];shown+=xs.length;return `<td data-day='${day.date}'><span class='num'>${day.day}</span>${xs.map(ev).join('')}</td>`}).join('')}</tr>`).join('')}</tbody></table></div></section>`}).join('')||'<p>Aucun élément ne correspond à cette recherche.</p>';count.textContent=`${shown} élément${shown>1?'s':''} affiché${shown>1?'s':''}`;document.querySelectorAll('[data-day]').forEach(td=>td.onclick=()=>openDay(td.dataset.day))}function openDay(date){let xs=all.filter(x=>x.date===date);if(!xs.length)return;document.querySelector('#ptitle').textContent=date.split('-').reverse().join('/');document.querySelector('#plist').innerHTML=xs.map(ev).join('');document.querySelector('#panel').classList.add('open')}document.querySelector('#close').onclick=()=>document.querySelector('#panel').classList.remove('open');document.querySelector('#panel').onclick=e=>{if(e.target.id==='panel')e.currentTarget.classList.remove('open')};render();
+</script>
+</body>
+</html>
